@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activate Your Account</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white !important;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            background-color: #f1f1f1;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to LMS 🎉</h1>
+        </div>
+        <div class="content">
+            <h2>Hello <%= user.name %>,</h2>
+            <p>Thank you for signing up! Please confirm your email address by Enter Code given below 
+                </p>
+
+           <h2><%= activatioToken.activationCode%></h2>
+            <p style="margin-top: 30px;">If you didn’t create an account, you can safely ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>If you have any question please don't hasitate to contact us <a href="mailto:muteebhdr@gmail.com">muteebhdr@gmail.com</a></p>
+            &copy; <%= new Date().getFullYear() %>
+              LMS. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
