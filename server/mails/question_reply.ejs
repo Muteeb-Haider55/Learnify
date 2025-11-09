@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>New Answer Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 540px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 24px;
+            border: 1px solid #ddd;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2D79F6;
+            padding: 10px 18px;
+            border-radius: 4px;
+            color: #ffffff;
+            text-decoration: none;
+            margin-top: 18px;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="title">Hello <%= name %>,</p>
+
+        <p>A new reply has been added to your question on <strong>Learnify</strong>. <%= title %></p>
+
+        <p>Please log in to your account to review the response.</p>
+
+
+        <p class="footer">Thank you,<br />Learnify Team</p>
+    </div>
+
+</body>
+
+</html>
