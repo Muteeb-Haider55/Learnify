@@ -7,6 +7,7 @@ import courseRouter from "./route/course.route";
 import orderRouter from "./route/order.route";
 import notificationRouter from "./route/notification.route";
 import analyticsRouter from "./route/analytics.route";
+import layoutRouter from "./route/layout.route";
 
 
 export const app = express();
@@ -24,7 +25,7 @@ app.use(cors({
 }));
 
 // routes
-app.use('/api/v1', userRouter, courseRouter, orderRouter, notificationRouter, analyticsRouter);
+app.use('/api/v1', userRouter, courseRouter, orderRouter, notificationRouter, analyticsRouter, layoutRouter);
 
 
 
