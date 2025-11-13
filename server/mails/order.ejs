@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Order Confirmation</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background: #f8f8f8; padding: 30px;">
+
+    <div
+        style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 8px; padding: 25px; border: 1px solid #ddd;">
+
+        <h2 style="text-align: center; color: #333;">Order Placed Successfully</h2>
+        <p style="font-size: 15px; color: #555;">
+            Thank you for your purchase! Your order has been placed successfully.
+        </p>
+
+        <hr style="margin: 20px 0;">
+
+        <h3 style="color: #333;">Order Details</h3>
+        <p style="font-size: 15px; color: #444;"><strong>Order ID:</strong>
+            <%= order._id %>
+        </p>
+        <p style="font-size: 15px; color: #444;"><strong>Course Name:</strong>
+            <%= order.name %>
+        </p>
+        <p style="font-size: 15px; color: #444;"><strong>Price:</strong> $<%= order.price %>
+        </p>
+        <p style="font-size: 15px; color: #444;"><strong>Date:</strong>
+            <%= order.date %>
+        </p>
+
+        <hr style="margin: 20px 0;">
+
+        <p style="font-size: 15px; color: #555;">
+            You can now log in to your Learnify account and start learning.
+        </p>
+
+      
+
+        <p style="font-size: 14px; color: #999; text-align: center; margin-top: 30px;">
+            Thank you for choosing Learnify.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
